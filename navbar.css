@@ -1,0 +1,111 @@
+/*
+Navbar
+*/
+.navbar{
+    position: sticky;
+    top: 0;
+    overflow: visible;
+    z-index: 1000;
+    box-shadow: 3px 3px 5px;
+}
+
+.navbar ul{
+    list-style-type: none;
+
+    background-color:#142850;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    padding-inline: -0px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.3em;
+    margin-right: 20px;
+}
+
+.navbar #hide-on-small a:hover{
+    color: #FDBB04;
+}
+
+.navbar li:nth-child(1)
+{
+    margin-right: auto;
+    margin-left: 100px;
+}
+
+.navbar li .dropdown{
+    display: none;
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 990px){
+    .navbar #hide-on-small{
+        display: none;
+    }
+
+    .navbar li .dropdown{
+        display: inline-block;
+    }
+
+}
+
+@media screen and (min-width: 991px){
+    .navbar #alternateNavbarContent{
+        display: none !important;
+    }
+}
+
+/* Dropdown */
+.dropdown{
+    display: block;
+    position: relative;
+}
+
+.dropdown button{
+    background-color: hsl(220, 60%, 20%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.dropdown:hover button{
+    background-color: hsl(220, 60%, 30%);
+}
+
+.dropdown a:hover{
+    background-color: hsl(220, 60%, 30%);
+}
+
+/*Makes the icon for the dropdown button larger*/
+.custom-icon-1-6{
+    font-size: 1.6em;
+}
+
+/* Dropdown Content*/
+.navbar .alt-content{
+    display: none;
+    position: relative;
+    background-color: hsl(220, 60%, 20%);
+}
+
+.navbar .alt-content a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar .alt-content a:hover{
+    color: #FDBB04;
+}

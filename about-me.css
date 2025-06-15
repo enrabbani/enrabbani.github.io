@@ -1,0 +1,109 @@
+
+#about-me-section .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: auto;
+    background-color: #2A5DBB; 
+}
+
+#about-me-section .textbox{
+    max-width: 55%;
+    width: auto;
+}
+
+#about-me-section h1{
+    text-align: left;
+    margin-bottom: -20px;
+}
+
+#about-me-section p{
+    gap: 0px;
+}
+
+#about-me-section .imagebox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    text-align: right;
+    gap: 5px;
+    align-items: flex-end;
+    justify-content: top;
+    width: 40%;
+}   
+
+#about-me-section .image img{
+     width: 250px;
+     margin-top: 50px;
+     margin-right: 100px;
+     max-width: 100%;
+     max-height: 100%;
+     border-radius: 50%;
+     border: solid white;
+}
+
+#about-me-section .details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 140px;
+    text-align: center;
+    gap: 5px;
+
+}
+#about-me-section #name{
+    margin: 0px;
+}
+
+#about-me-section .icons{
+    margin: 0px;
+    word-spacing: 15px;
+    display: inline-block;
+}
+
+
+#about-me-section a{
+    text-decoration: none;
+    font-size: 3em;
+}
+
+/*Makes the icons for contact larger*/
+#about-me-section a:hover{
+    font-size: 3.5em;
+}
+
+@media screen and (max-width: 990px){
+    #about-me-section .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-me-section .imagebox{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    #about-me-section .textbox{
+        max-width: 85%;
+        width: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about-me-section h1{
+        text-align: center;
+    }
+
+    #about-me-section .details{
+        align-items: center;
+        text-align: center;
+         margin-right: 0px;
+    }
+
+    #about-me-section .image img{
+        margin-right: 0px;
+    }
+}

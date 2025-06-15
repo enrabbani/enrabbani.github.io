@@ -1,0 +1,138 @@
+#projects-section
+{
+    background-color: hsl(216, 70%, 55%); 
+    border: hsl(216, 70%, 55%) solid 1px;
+}
+
+#projects-section h2{
+    margin-left: 5%;
+}
+
+#projects-section .image-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: auto;
+    
+    margin-left: 7%;
+    margin-right: 7%;
+    gap: 2%;
+}
+
+
+#projects-section .image-box{
+     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 32%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+#projects-section img{
+    max-width: 100%;
+    max-height: 100%;
+    border: 3px white solid;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+#projects-section iframe{
+    max-width: 100%;
+    max-height: 100%;
+    border: 3px white solid;
+    border-radius: 10px;
+    
+    object-fit: contain;
+}
+
+
+#projects-section .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: auto;
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 2%;
+}
+
+#projects-section h1{
+    text-align: center;
+    
+}
+
+#projects-section .text-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    height: auto;
+    
+    margin-left: 7%;
+    margin-right: 7%;
+    gap: 2%;
+}
+
+#projects-section .text-box{
+     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: left;
+    justify-content: center;
+    max-width: 32%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+
+#projects-section .text-box p {
+    margin-bottom: -0.5em; /* or 0 if you want no gap at all */
+}
+
+#projects-section ul{
+    color: white;
+    font-size: 1.4em;
+}
+
+#projects-section p{
+    gap: 0px;
+}
+
+#projects-section .text{
+    gap: 0px;
+}
+
+@media screen and (max-width: 990px)
+{
+    #projects-section .image-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #projects-section .text-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #projects-section .text-box{
+        max-width: 90%;
+        width: auto;
+        align-items: center;
+    }
+
+    #projects-section .image-box{
+        max-width: 90%;
+        width: auto;
+         align-items: center;
+    }
+}

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emán Rabbani</title>
+    <link rel = "icon" href = "images/icons/favicon.png" type = "image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/af8eb1cd23.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    
+    <link rel = "stylesheet" href = "navbar.css">
+    <link rel = "stylesheet" href = "about-me.css">
+    <link rel = "stylesheet" href = "skills.css">
+    <link rel = "stylesheet" href = "experiences.css">
+    <link rel = "stylesheet" href = "projects.css">
+    <link rel = "stylesheet" href = "footer.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "stylesheet" href = "slider.css">
+    
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <ul>
+            <li><a href="">Emán Rabbani</a></li>
+
+            <li id="hide-on-small"><a href="#about-me-section">About</a></li>
+
+            <li id="hide-on-small"><a href="#skills-section">Skills</a></li>
+
+            <li id="hide-on-small"><a href="#experiences-section">Experiences</a></li>
+
+            <li id="hide-on-small"><a href = "#projects-section">Projects</a></li>
+
+            <li id="hide-on-small"><a  href = "https://drive.google.com/file/d/1aE_fIIU5CF_7jR-fGaqbKC39OXIWoFO1/view" target = "_blank">Resume</a></li>
+
+            <li>
+                <div class="dropdown">
+                    <button onclick = "toggleVisibility('alternateNavbarContent')"><i class="fa-solid fa-list .custom-icon-1-6"></i></button>
+
+                </div>
+            </li>
+
+        </ul>
+
+            <div class="alt-content" id  = "alternateNavbarContent">
+                <a href= "#about-me-section">About</a><br>
+                <a href= "#skills-section">Skills</a><br>
+                <a href="#experiences-section">Experiences</a><br>
+                <a href="#projects-section">Projects</a><br>
+                <a  href = "https://drive.google.com/file/d/1aE_fIIU5CF_7jR-fGaqbKC39OXIWoFO1/view" target = "_blank">Resume</a><br>
+            </div>
+    </nav>
+
+    
+    <section id = "about-me-section">
+        
+
+        <div class = "container">
+            <div class = "imagebox">
+                <div class = "image">
+                   <img src = "https://drive.google.com/thumbnail?id=1PlT5wRZh8sZWSckyzDooPi5sNEKaFDhZ" alt = "Profile Picture of Emán"/>
+                </div>
+
+                <div class = "details">
+                    <h2 id = "name">Emán Rabbani</h2>
+                    <div class = "icons">
+                        <a href = "mailto:emanrabbani041@gmail.com" target = "_blank" aria-label="Button for Emán's email, click it to go send him an email"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i></a> 
+                        <a href =  "https://www.linkedin.com/in/em%C3%A1n-rabbani-a529a0352/" target = "_blank" aria-label = "Button for Emán's LinkedIn, click it to go to his profile"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+                        <a href = "https://github.com/CreativeCoder3000" target="_blank"  aria-label = "Button for Emán's Github, click it to go to his profile"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class = "textbox" id = "textbox">
+                <h1>About Me</h1>
+                <p id = "greeting">I recently graduated from Buchholz High School and am starting college in Fall 2025. I am majoring in mechanical engineering at the University of Florida. I'm currently interested in mechatronics which is a field that combines mechanics, electronics, and computer systems as well as robotics which involves similar fields. In high school, I particularly enjoyed doing VEX VRC Robotics where I got to work with basic electronic components and cut metal to make a robot capable of performing a specific task like picking up rings and putting them on ring stands. Additionally, I enjoyed my AP Physics 2 class where I learned about electricity and magnetism, allowing me to understand the connection between physics concepts and real-world applications.</p>
+                <p>At UF, I plan on expanding on what I've learned by joining design teams and work on hands-on engineering projects. I'm especially interested in learning CAD to improve build quality, programming PID controllers for accurate autonomous control periods, and understanding how to build a PTO (Power Take-off) system for power distribution in mechanical systems</p>
+                <p>If you would like to reach out, contact me at emanrabbani041@gmail.com, and for UF-related inquiries, please use emanrabbani@ufl.edu.</p></div>
+            </div>
+    </section>
+
+    <section id = "skills-section">
+        <div class = "container">
+            <div class = "skillsbox">
+                <div class = "details">
+                    <div class = "skillslist" id = "html-logo">
+                        <button onClick = "skillsSectionChangeText('html-text')">
+                            <img src = "images/icons/HTML5_Badge.svg" alt = "HTML 5 Icon" width = "55" height = "60">
+                            HTML
+                        </button>
+                    </div>
+
+                    <div class = "skillslist" id = "css-logo">
+                        <button onClick = "skillsSectionChangeText('css-text')">
+                            <img src = "images/icons/CSS3_logo.svg" alt = "CSS 3 Icon" width = "55" height = "60">
+                            CSS
+                        </button>
+                    </div>
+
+                    <div class = "skillslist" id = "c++-logo">
+                        <button onClick = "skillsSectionChangeText('c++-text')">
+                            <img src = "images/icons/ISO_C++_Logo.webp" alt = "C++ Icon" width = "55" height = "58">
+                            C++
+                        </button>
+                    </div>
+
+                    <!--<div class = "skillslist" id = "python-logo">
+                        <button onClick = "skillsSectionChangeText('python-text')">
+                            <img src = "images/icons/Python_logo_01.webp" alt = "Python Icon" width = "55" height = "55">
+                            Python
+                        </button>
+                    </div>-->
+                    
+                    <div class = "skillslist" id = "fusion360-logo">
+                        <button onClick = "skillsSectionChangeText('fusion-360-text')">
+                            <img src = "images/icons/autodesk-fusion-360-logo-png_seeklogo-482400.webp" alt = "Fusion360 Icon" width = "55" height = "55">
+                            Fusion360
+                        </button>
+                    </div>
+
+                    <div class = "skillslist" id = "calculus-logo">
+                        <button onClick = "skillsSectionChangeText('calculus-text')">
+                            <img src = "images/icons/Calculator_icon.webp" alt = "Calculator Icon - represents Calculus" width = "55" height = "55">
+                            Calculus
+                        </button>
+                    </div>
+
+                    <div class = "skillslist" id = "physics-logo">
+                        <button onClick = "skillsSectionChangeText('physics-text')"n>
+                            <img src = "images/icons/Book.webp" alt = "Book Icon - represents Physics" width = "55" height = "55">
+                            Physics
+                        </button>
+                    </div>
+
+                    <div class = "skillslist" id = "powerpoint-logo">
+                        <button onClick = "skillsSectionChangeText('powerpoint-text')">
+                            <img src = "images/icons/640px-Microsoft_Office_PowerPoint_(2019–present).svg.webp" alt = "Microsoft Powerpoint Icon" width = "55" height = "50">
+                            Powerpoint
+                        </button>
+                    </div>
+
+                    <div class = "skillslist" id = "word-logo">
+                        <button onClick = "skillsSectionChangeText('word-text')">
+                            <img src = "images/icons/Microsoft_Office_Word_(2019–present).webp" alt = "Microsoft Word Icon" width = "55" height = "50">
+                            Word
+                        </button>
+                    </div>
+
+
+                    <div class = "skillslist" id = "excel-logo">
+                        <button onClick = "skillsSectionChangeText('excel-text')">
+                            <img src = "images/icons/Microsoft_Office_Excel_(2019–present).webp" alt = "Microsoft Excel Icon" width = "55" height = "50">
+                            Excel
+                        </button>
+                    </div>
+
+                    <div class = "skillslist" id = "project-management-logo">
+                        <button onClick = "skillsSectionChangeText('project-management-text')">
+                            <img src = "images/icons/project_management_institute_logo.jpeg" alt = "Project Management Icon" width = "55" height = "50">
+                            Project Management
+                        </button>
+                    </div>
+               </div>
+            </div>
+
+            <div class = "textbox" id = "textbox">
+                <button onClick = "skillsSectionChangeText('default-text')"><h1>Skills</h1></button>
+                
+                
+                <div class = "skillstextbox" id = "skillstextbox">
+                    <div class = "skillstextlist" id = "default-text" style = "display: block;">
+                        <p>During high school, I managed to accumulate a variety of skills. In my coursework, I gained a solid foundation in Calculus and Physics with the help of my excellent teachers and my own interest and curiosity. During middleschool, I learned Microsoft Powerpoint, Word, and Excel and am certified through Certiport.  As a student at Buchholz High School, I joined the Academy of Entrepreneurship and got certified in Entrepreneurship Small Business (ESB), National Registry of Food Safety Professionals (NRFSP), ServSafe, and Project Management. In VEX VRC Robotics, I took on the role of Lead Designer and learned how to design, build, program, and test a robot. After the season ended, I began learning CAD to design a simple drivebase which I prototyped and began building in future sessions. </p>
+                        <p>To learn more about each individual skill listed, click on the icon and the text will update accordingly. To return to this overview, click the "Skills" header at the top.</p>
+                    </div>
+
+                    <div class = "skillstextlist" id = "html-text" style="display: none;">
+                        <p>HTML - During Summer 2025, I learned HTML 5 in order to make my own website. I learned how to display text, images, videos, and files from google drive. Additionally, I learned about dividers, sections, classes, website icons, navbar, etc. Also, I learned about accessibility practices like aria-label and alt to make my website more accessible to those who use screen readers. My HTML file for this website includes a small Javascript section that handles the image slider, text change, navigation bar, and greeting. By coding this website myself, I've been able to expand on my knowledge of programming and fully personalize the website.</p>
+                    </div>
+
+                    <div class = "skillstextlist" id = "css-text" style="display: none;">
+                        <p>CSS - During Summer 2025, I learned CSS in order to style my website. I created a simple color scheme for this website using shades of blue and implemented it with CSS styling. Additionally, all of the icons needed CSS styling from a stylesheet in order for them to be formatted correctly. I learned about flexboxes, formatting, layouts, etc. in order to make the website more aesthetic. Additionally, I implemented used CSS to make the website dynamically resize and adjust for other platforms such as tablets or smartphones where the screen size is significantly smaller. </p>
+                    </div>
+
+                    <div class = "skillstextlist" id = "c++-text" style="display: none;">
+                        <p>C++ - During my time in VEX VRC Robotics, I learned C++ through the VexCode program where I started programming simple functions for the robot such as responding to controller input. In my senior year, I made more complex autonomous routines that lasted 45-60 seconds long. Later, I experimented with Jackson Area Robotics (JAR) Template that included a simple PID and odometry system. Despite not coding it myself, I was able to learn from the JAR Template by modifying different settings for voltage and driver control functions. I used the template to improve accuracy during autonomous portions raising our skills score from 25 to 41. Now, I plan on learning C++ using online resources to give me a solid foundation before moving on to learning PIDs in more detail so that I can implement one myself.</p>
+                        <p>JAR is available here: https://github.com/JacksonAreaRobotics/JAR-Template</p>
+                    </div>
+
+                    <!--<div class = "skillstextlist" id = "python-text" style="display: none;">
+                        <p>Python</p>
+                    </div>-->
+
+                    <div class = "skillstextlist" id = "fusion-360-text" style="display: none;">
+                        <p>Fusion360 - After our last robotics competition in February 2025, I began experimenting with Fusion360, a CAD Program, that allowed me to start prototyping the drivebase. While I did not have time to finish it, I got started with learning the basics of the program. A sample image is available below:</p>
+                        <img src = "https://drive.google.com/thumbnail?id=10qd41JwE9Qqc-bNrpozjN2VdXIZRJEWN&sz=w1000" alt = "Image depicts basic CAD project for a VEX VRC drivebase">
+                        <p>Next, I plan on building a solid foundation in Fusion 360 so that I can learn to design different systems like intakes, claws, etc.</p>
+                    </div>
+
+                    <div class = "skillstextlist" id = "calculus-text" style="display: none;">
+                        <p>Calculus - During my senior year of highschool, I took Calculus BC which covers Calculus I and Calculus II. I found this subject to be fascinating because of its applications. Particularly, I found the washer, disk, and shell methods to be excellent applications of integral Calculus. Additionally, Calculus is particularly useful in understanding physics and the derivations of fundamental formulas. </p>
+                        <p>I found Calculus II's unit on parametric equations to be quite insightful: using my knowledge of parametric equations, I began finding a way to model the path of a robot takes using motor rotations. The idea was to use equations to calculate the distance the robot traveled using motor rotations and then use parametric equations to model the x and y functions for the robot separately. Unfortunately, the data my friend and I obtained from the motor rotations didn't produce the results we were looking for, but the function I came up with in Desmos produces accurate results assuming it has the appropriate data.</p>
+                        <p>Here is one of the models - this one assumes you have changes in distances and angles:</p>
+                        <p>https://www.desmos.com/calculator/mxq3qit0i6</p>
+                    </div>
+
+                    <div class = "skillstextlist" id = "physics-text" style="display: none;">
+                        <p>Physics - During my junior and senior years of highschool, I took AP Physics 1 and 2 which covered mechanics, electricity and magnetism, optics, and some of modern physics. Particularly, I found Physics 2 to be intriguing because of the connection between electricity and magnetism to electrical equipment. During Spring Break, I took the time to relearn electricity and magnetism using videos by Walter Lewin on MIT OCW to solidify the concepts.</p>
+                        <p>As I progressed through the lectures, I began to understand how the concepts translate to the real world. For example, in Walter Lewin's lecture on Magnetic Fields, Lorentz Force, Torques, and Electric Motors (DC) showed me how the concept of currents creating magnetic fields translates to motors. Additionally, I learned about the torque reversal problem in DC motors and how that is typically solved with commutators or alternating-current systems. Through engaging with supplemental materials, I was able to take my learning to the next level.</p>
+                        <p>A link to the videos can be found here: https://www.youtube.com/playlist?list=PLyQSN7X0ro2314mKyUiOILaOC2hk6Pc3j</p>
+<p>Here are some links to Desmos graphs I made</p>
+<p>Electric Field v Radius: https://www.desmos.com/calculator/3ioo9t2fnd</p>
+<p>Electric Potential Energy vs Radius: https://www.desmos.com/calculator/tyllfoj6ep</p>
+<p>Electric Potential vs Radius: https://www.desmos.com/calculator/4updl9kb9i</p>
+
+<p>This graph below is particularly interesting because it models what the distance and magnification of the image based on values for the distance of object and focal length. This is very useful for problems in optics that involve ask for those quantities. 
+<p>https://www.desmos.com/calculator/nmuzsdebxe</p>
+                    </div>
+
+                    <div class = "skillstextlist" id = "powerpoint-text" style="display: none;">
+                        <p>Microsoft Powerpoint - Below is my certification from Certiport</p>
+                        <img src = "https://drive.google.com/thumbnail?id=1B-NiiDoQfemuNwtF8larlRhNblhWnSSn&sz=w1000" alt = "Image displays Microsoft Powerpoint certification from Certiport">
+                    </div> 
+
+                    <div class = "skillstextlist" id = "word-text" style="display: none;">
+                        <p>Microsoft Word - Below is my certification from Certiport</p>    
+                        <img src = "https://drive.google.com/thumbnail?id=1M8dmOFZRll3KNwk5Z8bIGsBoocvgq_cM&sz=w1000" alt = "Image displays Microsoft Word certification from Certiport">
+                    </div>
+
+                    <div class = "skillstextlist" id = "excel-text" style="display: none;">
+                        <p>Microsoft Excel - Below is my certification from Certiport</p>
+                        <img src = "https://drive.google.com/thumbnail?id=1Kryahc43UCPA-1pK-_bh3gno3BkoKyAS&sz=w1000" alt = "Image displays Microsoft Excel certification from Certiport">
+                    </div>
+
+                    <div class = "skillstextlist" id = "project-management-text" style="display: none;">
+                        <p>Project Management - Below is my certification from Certiport</p>
+                        <img src = "https://drive.google.com/thumbnail?id=1zuoXLjKvGALoLqVTiHA7RkD8rL2yLdNR&sz=w1000" alt = "Image displays Project Management certification from Certiport">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id = "experiences-section">
+        <div class = "container">
+            <div class = "leftbox">
+                <div class = "details">
+                    <h1>Experiences</h1>
+                </div>
+            </div>
+
+            <div class = "rightbox" id = "rightbox">
+                <h2>Robotics</h2>
+                
+                 <div class = "slider">
+                    <div class = "slide-content">
+                       <button class = "arrow-btn" onclick="changeSlide(this, -1)">◀</button>
+                       
+                    <img class = "slide" src = "https://drive.google.com/thumbnail?id=1S_nGzQZuQNnV05IC6F9owcCz448AMSKj&sz=w1000" alt = "Robotics Slider Image 1" style = "display: inline-block;">
+                    <img class = "slide" src = "https://drive.google.com/thumbnail?id=1u-PIIENM3hFJ5Har3ZqEZFjz2hFQrqPL&sz=w1000" alt = "Robotics Slider Image 2" style = "display: none;">
+                    <img class = "slide" src = "https://drive.google.com/thumbnail?id=1WkjsIxoiidESht21Ed2eRaH08NXuB3cg&sz=w1000" alt = "Robotics Slider Image 3" style = "display: none;">
+                    <img class = "slide" src = "https://drive.google.com/thumbnail?id=1LfKX14C2sL7-EfKYgFahDrCwZrGZ1TVN&sz=w1000" alt = "Robotics Slider Image 4" style = "display: none;">
+                    <button class = "arrow-btn"  onclick="changeSlide(this, 1)">
+                       ▶
+                    </button> 
+                    </div>
+                    
+                     <div class = "slider-text">
+                        <div class = "slide-text" style = "display: block;">
+                        <p>1/4</p>
+                        <p>Shows an earlier version of the robot near a low wall stake. Note: this was taken at the Rams Robotics High Stakes Harvest Kickoff competition in Interlachen, Florida.</p>
+                    </div>
+
+                    <div class = "slide-text" style = "display: none;">
+                        <p>2/4</p>
+                        <p>Shows an earlier version of the robot in competition. I am present on the left side with my friend Max Nikitin next to me. Note: this was taken at the Rams Robotics High Stakes Harvest Kickoff competition in Interlachen, Florida.</p>
+                    </div>
+
+                    <div class = "slide-text" style = "display: none;">
+                        <p>3/4</p>
+                        <p>Shows the later version of the robot in competition. I am present on the front right side with my friend Max next to me. Note: this was taken at the ACPS High Stakes District competition in Gainesville, Florida.</p>
+                    </div>
+
+                     <div class = "slide-text" style = "display: none;">
+                        <p>4/4</p>
+                        <p>Shows me and my friend Max preparing for a judging interview. Note: this was taken at the High Stakes competition at FAMU.</p>
+                    </div>
+                    
+                     </div>
+                    
+                
+                </div>
+                
+               
+                
+                <hr class = "custom-hr">
+
+                <div class = "text">
+                    <p>During my senior year, I embarked on a long and challenging journey with Robotics. At first, I wasn't sure if I was ready to be the Lead Designer of the team, but overtime, I grew into the role and learned a great deal along the way. My friend, Max, was another member of the team and he acted as our driver for most of the season. However, we didn't just build one robot together; we built two. Our first robot was structurally weak and more susceptible to being pushed around in matches. Realizing this, we worked together to forge a new robot that was strong and capable of effectively performing the functions of the game even while facing interference from the opposing team.</p>
+                    <p>After the new robot was constructed, there were still crucial aspects of our strategy that needed improvement: driving and programming. Max, being our primary driver of the team, got lots of practice with maneuvering the robot and completing objectives. In addition, I programmed the autonomous periods of the robot to improve our scores during matches and skills runs. All of this allowed us to improve our skills score from 25 to 41 at the last competition. While this wasn't enough to qualify for the states competition, both Max and I were able to learn valuable skills from our time working together — which was what really mattered. </p>
+                    <p>After competing in five competitions, we both learned the importance of teamwork, communication, designing, and planning as crucial components of the engineering process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id = "projects-section">
+        <div class = "project">
+            <h1>Projects</h1>
+            <hr>
+            <h2>VEX Robotics Project – High Stakes Season (2024–2025)</h2>
+
+            <div class = "image-container">
+                <div class = "image-box">
+                    <img src = "https://drive.google.com/thumbnail?id=1x6ccAqeLt04xiD2ZXK1lIE_9kxtXehvT&sz=w1000" alt = "Image shows the early concept for the robot">
+                </div>
+
+                <div class = "image-box">
+                    <img src = "https://drive.google.com/thumbnail?id=1Hl2XAntle5YS6gjfizCxzQ5WAzaoS7pZ&sz=w1000" alt = "Image shows the second version of the robot being worked on">
+                </div>
+
+                <div class = "image-box">
+                    <iframe src="https://drive.google.com/file/d/1-gf8NYTnGwuhUViY9iMit8Eqf5O1tI2Z/preview"  width = "700" height = "393" allowfullscreen = "allowfullscreen" title = "Video shows the robot in action" allow="autoplay"></iframe>
+                </div>
+                   
+            </div>
+
+            
+            <div class = "text-container">
+                <div class = "text-box">
+                    <p><b>What?</b></p>
+                        <ul>
+                            <li>The main objective of the Vex High Stakes game was to take circular rings and put them on mobile ring stands.</li>
+                            <li>We divided this task into three different systems: the intake (picking up rings from the field), the conveyor belt (scoring those rings onto the mobile ring stands), and the clamp (holding onto the mobile ring stand to allow the robot to score).</li>
+                        </ul>    
+                </div>
+
+                <div class = "text-box">
+                        <p><b>How?</b></p>
+                        <ul>
+                            <li>Came up with basic designs in Microsoft OneNote through discussions over Discord.</li>
+                            <li>Our first robot was a prototype and was able to perform the basic functions of the game but was structurally weak and frequently curved to the left instead of driving straight.</li>
+                            <li>By contrast, our second robot had improved structural quality and performed the main functions of the game consistently and reliability. However, towards the end we had similar problems with the robot curving to one side instead of driving straight.</li>
+                        </ul>
+                </div>
+
+                <div class = "text-box">
+                        <p><b>Results</b></p>
+                        <ul>
+                            <li>Positives: Second robot was structurally sound and performed the main objectives of the game consistently and reliably.</li>
+                            <li>Negatives: Our final robot had a faulty drivebase and lacked speed. Additionally, our robot couldn't perform the advanced tasks of the game such as climbing or putting rings on wall stakes.</li>
+                            <li>Overall, both Max and I learned a lot from this experience. We learned critical lessons about drivetrain geometry, frame rigidity, and the importance of precise mechanical planning.</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class = "project">
+            <h2>Game Development Fundamentals Course – Unity & C# (Summer 2024)</h2>
+
+            <div class = "image-container">
+                <div class = "image-box">
+                    <iframe src="https://drive.google.com/file/d/1HoPXQhNr1WUhok_Fb4roslSF7DEHsO9y/preview"  width = "700" height = "393" allowfullscreen = "allowfullscreen" title = "Image shows the Canvas assignment for Lesson 6 Programming Basics and Variables" allow="autoplay"></iframe>
+                </div>
+
+                <div class = "image-box">
+                    <iframe src="https://drive.google.com/file/d/1ZadKUQrnFJFML9cgKZsMzJxpNcR8wCP5/preview"  width = "700" height = "393" title = "Image shows a sample of the rough outline of the course description" allowfullscreen = "allowfullscreen" allow="autoplay"></iframe>
+                </div>
+
+                <div class = "image-box">
+                   <iframe src="https://drive.google.com/file/d/1QRD4mHcjliC-OkCfMS-y3wp8WQxWkqFS/preview"  width = "700" height = "393"  title = "Video shows a sample of Lesson 19 on Loops" allowfullscreen = "allowfullscreen" allow="autoplay"></iframe>
+                </div>
+                   
+            </div>
+
+            
+            <div class = "text-container">
+                <div class = "text-box">
+                    <p><b>What?</b></p>
+                        <ul>
+                            <li>Designed and taught a beginner-level course on Unity and C# for middle-school students.</li>
+                            <li>Progressed into intermediate topics such as enums, coroutines, inheritance, polymorphism, etc.</li>    
+                            <li>Originally split into 9 modules, shortened to 5 to run through creation of a basic game with movement, animations, interactables, and item systems.</li>
+                        </ul>    
+                </div>
+
+                <div class = "text-box">
+                        <p><b>How?</b></p>
+                        <ul>
+                            <li>Recorded videos using OBS and edited them with ClipChamp.</li>
+                            <li>Delivered lessons and assignments via Canvas to assemble course content.</li>
+                            <li>Used Visual Studio and Unity to teach content through coding and demonstrations.</li>
+                        </ul>
+                </div>
+
+                <div class = "text-box">
+                        <p><b>Results</b></p>
+                        <ul>
+                            <li>Over 10 students enrolled in the course with an average course grade of 87%.</li>
+                           <li>Course content included 50+ lessons and more than 70 instructional videos.</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class = "project">
+            <h2>Personal Portfolio Project - HTML, CSS, and Javascript (Summer 2025)</h2>
+
+            <div class = "image-container">
+                <div class = "image-box">
+                     <img src = "https://drive.google.com/thumbnail?id=1coY-YjE6tRGv01d0ZzgT13hTTweuzDxc&sz=w1000" title = "Image shows a draft of the website in OneNote" alt = "Image shows a draft of the website in OneNote">
+                </div>
+
+                <div class = "image-box">
+                   <iframe src="https://drive.google.com/file/d/132yg4QDR40JA90JEt-oZAgKvpRg3PS_8/preview"  title = "Image shows sample code from the website in Visual Studio" alt = "Image shows sample code from the website in Visual Studio" width = "700" height = "400" allowfullscreen = "allowfullscreen" allow="autoplay"></iframe>
+                </div>
+
+                <div class = "image-box">
+                   <img src = "https://drive.google.com/thumbnail?id=1jZ-qWCF9JqjLZTINQ2PX8QQUYqyJHIDq&sz=w1000" alt = "Image shows the Github respository for the website">
+                </div>
+                   
+            </div>
+
+            
+            <div class = "text-container">
+                <div class = "text-box">
+                    <p><b>What?</b></p>
+                        <ul>
+                            <li>Created this website to showcase my achievements, projects, and experiences in a more personal, creative format beyond a traditional resume or LinkedIn.</li>    
+                            <li>The current layout is a single-scroll page with a navigation bar for smooth section transitions.</li>
+                            <li>Designed with interactivity in mind by incorporating sliders, buttons, and embedded visuals to make the experience dynamic and engaging.</li>
+                        </ul>    
+                </div>
+
+                <div class = "text-box">
+                        <p><b>How?</b></p>
+                        <ul>
+                            <li>Used HTML for the foundation of the website and CSS to style it.</li>
+                            <li>Used JavaScript for interactive elements like the image slider, toggling content, and a time-based greeting.</li>
+                            <li>Integrated Google Drive embeds and FontAwesome icons to enhance presentation and usability.</li>
+                        </ul>
+                </div>
+
+                <div class = "text-box">
+                        <p><b>Results</b></p>
+                        <ul>
+                           <li>In progress — this website is an evolving project that will continue to change as I gain more skills, experiences, and projects to showcase.</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p> ©2025 All Rights Reserved • Hosted on Github</p>
+        
+        <p>Disclaimer: This website is a personal portfolio created for educational and professional purposes. All icons and third-party assets are used under their respective licenses for non-commercial, informational use only.</p>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+    //Greeting
+    const greeting = document.getElementById("greeting");
+    const now = new Date();
+    const hour = now.getHours();
+
+    if(hour < 12)
+    {
+        greeting.textContent = "Good morning!" + " " + greeting.textContent;
+    } else if(hour < 18)
+    {
+        greeting.textContent = "Good afternoon!" + " " + greeting.textContent;
+    }
+    else{
+        greeting.textContent = "Good evening!" + " " + greeting.textContent;
+    }
+
+    function toggleVisibility(elementID)
+    {
+        const content = document.getElementById(elementID);
+        //alternateNavbarContent
+        if(content.style.display == "none" || content.style.display == "" )
+        {
+            content.style.display = "block";
+        }
+        else{
+            content.style.display = "none";
+        }
+    }
+
+    //Handles the skills text section specifically
+    function skillsSectionChangeText(idName)
+    {
+        const elements = document.getElementsByClassName('skillstextlist');
+        for(let i = 0; i < elements.length; i++)
+        {
+            elements[i].style.display = "none";
+        }   
+
+        const content = document.getElementById(idName);
+        content.style.display = "block";
+
+
+    }
+
+    /* This is for the image slider - allows for the image and text below to change*/
+    function changeSlide(button, step)
+    {
+        const slider = button.closest('.slider');
+        const slides = slider.getElementsByClassName('slide');
+        const slidestext = slider.getElementsByClassName('slide-text');
+
+        let currentIndex = 0;
+        for(let i = 0; i < slides.length; i++)
+        {
+            if(slides[i].style.display != "none")
+            {
+                currentIndex = i;
+                break;
+            }
+        }
+
+        for(let i = 0; i < slides.length; i++)
+        {
+            slides[i].style.display = "none";
+            slidestext[i].style.display = "none";
+        }
+        
+        
+        let newIndex = (currentIndex + step + slides.length) % slides.length;//
+       
+        slides[newIndex].style.display = "inline-block";
+        slides[newIndex].style.animation = "none";
+        slides[newIndex].style.offsetHeight;
+        slides[newIndex].style.animation = "fadeIn 0.5s 1";
+       slidestext[newIndex].style.display = "inline-block"; 
+    }
+</script>

@@ -1,0 +1,85 @@
+@font-face{
+    src: url(fonts/Inter/Inter_18pt-Regular.ttf);
+    font-family: Inter-Regular;
+   
+}
+
+a{
+    color: /*rgb(253,187,4);*/white;
+   
+    font-size: 1.5em;
+}
+
+
+
+p{
+    color: /*rgb(253,187,4);*/white;
+    
+    font-size: 1.4em;
+    
+}
+
+
+h1{
+    color: white;
+    font-weight: bold;
+    text-shadow:
+     -1px -1px 0 #000000,
+      1px -1px 0 #000000,
+     -1px  1px 0 #000000,
+      1px  1px 0 #000000;
+    font-size: 3em;
+}
+
+h2{
+    color: white;
+    font-weight: bold;
+    text-shadow:
+     -1px -1px 0 #000000,
+      1px -1px 0 #000000,
+     -1px  1px 0 #000000,
+      1px  1px 0 #000000;
+    font-size: 1.9em;
+}
+
+html{
+    scroll-behavior: smooth;
+   
+}
+
+section{
+     scroll-margin-top: 60px;
+}
+
+body{
+    margin: 0px;
+   background-color:#142850;
+    font-family: Inter-Regular, Helvetica, sans-serif;
+    
+}
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+ 
+}
+
+h1{
+    text-align: center;
+}
+
+.custom-hr{
+    width: 75%;
+    text-align: center;
+    height: 3px;
+    background-color: white;
+    border: none;
+    
+}
+
+@media screen and (max-width: 990px){
+  .custom-hr{
+    margin: 20px auto;
+  }
+}

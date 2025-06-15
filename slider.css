@@ -1,0 +1,60 @@
+.slide-content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+.slide-content .arrow-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    max-width: 45%;
+    max-height: 45%;
+    font-size: 2.5vh;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.slide-content .arrow-btn:hover{
+    color: #FDBB04;   
+}
+
+.slide-content .slide{
+    max-width: 85%;
+    max-height: 85%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border: 3px white solid;
+    border-radius: 10px;
+
+     animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+.slide-content .slide.active{
+    opacity: 1;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@media screen and (max-width: 990px)
+{
+    .slide-content{
+        justify-content: center;
+        align-items: center;
+    }
+}

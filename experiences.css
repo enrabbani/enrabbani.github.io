@@ -1,0 +1,109 @@
+#experiences-section .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: auto;
+    background-color: #2A5DBB; 
+    
+}
+
+#experiences-section .custom-hr{
+    display: flex;
+    align-items: center;
+}
+
+#experiences-section h1{
+    text-align: left;
+    margin-bottom: -20px;
+}
+
+#experiences-section p{
+    gap: 0px;
+}
+
+#experiences-section .rightbox{
+    margin-top: 15.5px;
+    max-width: 55%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#experiences-section .rightbox p{
+    text-align: center;
+}
+
+#experiences-section .leftbox{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 850px;
+    text-align: right;
+    gap: 5px;
+    align-items: flex-end;
+    justify-content: top;
+    width: 40%;
+    
+    
+}   
+
+#experiences-section .details{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 120px;
+    text-align: center;
+    gap: 12px;
+    
+}
+
+@media screen and (max-width: 1300px)
+{
+    #experiences-section .leftbox{
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 990px){
+    #experiences-section .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #experiences-section .leftbox{
+        width: 100%;
+        height: 10%;
+        align-items: center;
+        text-align: center;
+        margin-right: 0px;
+          margin-left: 0px;
+    }
+
+    #experiences-section .rightbox{
+        max-width: 85%;
+        width: auto;
+        text-align: center;
+         align-items: center;
+         justify-content: center;
+         margin-right: 0px;
+         margin-left: 0px;
+    }
+
+    #experiences-section h1{
+        text-align: center;
+    }
+
+    #experiences-section .details{
+        align-items: center;
+        text-align: center;
+         margin-right: 0px;
+    }
+
+    #experiences-section p{
+        gap: 0px;
+    }
+}
