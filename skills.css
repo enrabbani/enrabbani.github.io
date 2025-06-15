@@ -91,13 +91,18 @@
     border-radius: 15px;
 }*/
 
-#skills-section a{
+#skills-section .details a{
     text-decoration: none;
     font-size: 3em;
 }
 
-#skills-section a:hover{
+#skills-section .details a:hover{
     font-size: 3.5em;
+}
+
+#skills-section .skillstextlist a{
+    text-decoration: none;
+    font-size: 1.4em;
 }
 
 @media screen and (max-width: 990px){
