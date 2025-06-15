@@ -101,7 +101,7 @@
 }*/
 
 #skills-section .skillstextlist a{
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 1.4em;
 }
 
