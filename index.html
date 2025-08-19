@@ -75,7 +75,7 @@
                     <h2 id = "name">Emán Rabbani</h2>
                     <div class = "icons">
                         <a href = "mailto:emanrabbani1@gmail.com" target = "_blank" aria-label="Button for Emán's email, click it to go send him an email"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i></a> 
-                        <a href =  "https://www.linkedin.com/in/em%C3%A1n-rabbani-a529a0352/" target = "_blank" aria-label = "Button for Emán's LinkedIn, click it to go to his profile"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+                        <a href =  "https://www.linkedin.com/in/eman-rabbani/" target = "_blank" aria-label = "Button for Emán's LinkedIn, click it to go to his profile"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
                         <a href = "https://github.com/enrabbani" target="_blank"  aria-label = "Button for Emán's Github, click it to go to his profile"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
                     </div>
                 </div>
@@ -485,7 +485,11 @@
     const now = new Date();
     const hour = now.getHours();
 
-    if(hour < 12)
+    if(hour > 0 && hour < 4)
+    {
+         greeting.textContent = "Good evening!" + " " + greeting.textContent;
+    }
+    else if(hour > 4 && hour < 12)
     {
         greeting.textContent = "Good morning!" + " " + greeting.textContent;
     } else if(hour < 18)
@@ -557,4 +561,5 @@
        slidestext[newIndex].style.display = "inline-block"; 
     }
 </script>
+
 
